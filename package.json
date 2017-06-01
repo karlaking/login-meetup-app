@@ -11,6 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "hbs": "^4.0.0"
+    "hbs": "^4.0.0",
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "crypto-js": "^3.1.6",
+    "jsonwebtoken": "^7.1.9",
+    "lodash": "^4.15.0",
+    "mongodb": "^2.2.5",
+    "mongoose": "^4.5.9",
+    "validator": "^5.6.0"
   }
 }

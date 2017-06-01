@@ -35,6 +35,13 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/login', (req, res) => {
+  res.render('login.hbs', {
+    pageTitle: 'Login Page',
+    welcomeMessage: 'Welcome to MeetUp Finder!!'
+  });
+});
+
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
