@@ -28,17 +28,24 @@ hbs.registerHelper('screamIt', (text) => {
   return text.toUpperCase();
 });
 
+hbs.registerHelper('action', () => {
+
+});
+
+hbs.registerHelper('view', () =>  {
+
+});
+
 app.get('/', (req, res) => {
   res.render('home.hbs', {
     pageTitle: 'Home Page',
-    welcomeMessage: 'Welcome to my website'
+    welcomeMessage: 'Welcome to MeetUp Finder!'
   });
 });
 
 app.get('/login', (req, res) => {
   res.render('login.hbs', {
-    pageTitle: 'Login Page',
-    welcomeMessage: 'Welcome to MeetUp Finder!!'
+    pageTitle: 'Login'
   });
 });
 
