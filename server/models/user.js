@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
-const jwt = require('jsonwebtoken');
 const _ = require('lodash');
-const bcrypt = require('bcryptjs');
+
 
 var UserSchema = new mongoose.Schema({
   email: {
@@ -20,17 +19,7 @@ var UserSchema = new mongoose.Schema({
     type: String,
     require: true,
     minlength: 6
-  },
-  tokens: [{
-    access: {
-      type: String,
-      required: true
-    },
-    token: {
-      type: String,
-      required: true
-    }
-  }]
+  }
 });
 
 UserSchema.methods.toJSON = function () {
